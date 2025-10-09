@@ -616,6 +616,13 @@ body {
 
     .social-links {
         justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .social-link {
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
     }
 }
 
