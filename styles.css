@@ -475,13 +475,21 @@ body {
     flex-wrap: wrap;
 }
 
-.contact-info h3 {
+.contact-info {
+    /* No flex, stack vertically */
+}
+
+.contact-text h3 {
     margin-bottom: 1rem;
     color: #00ff88;
 }
 
-.contact-info p {
-    margin-bottom: 0.5rem;
+.contact-text p {
+    margin-bottom: 1rem; /* Increased to space before social links */
+}
+
+.social-links {
+    margin-top: 1rem;
 }
 
 .social-links {
@@ -490,14 +498,25 @@ body {
 }
 
 .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
     color: #ffffff;
-    font-size: 2rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 4rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 5rem;
+    height: 5rem;
 }
 
 .social-link:hover {
-    color: #00ff88;
-    transform: scale(1.2);
+    background: #00ff88;
+    color: #0a0a0a;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.4);
 }
 
 .copyright {
