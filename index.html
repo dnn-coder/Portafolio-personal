@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web - Desarrollador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">Dvivas Dev</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="stars"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Providing the best project exprience</h1>
+                    <p>Desarrollador web apasionado por crear experiencias digitales innovadoras y funcionales.</p>
+                    <a href="#projects" class="cta-button">Ver Proyectos</a>
+                </div>
+                <div class="hero-image">
+                    <img src="img//fotoDanny.png" alt="Foto de perfil de Danny" class="avatar">
+                </div>
+            </div>
+            <div class="hero-bg"></div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="img/html.png" alt="HTML icon">
+                        </div>
+                        <h3>HTML</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card css-card">
+                        <div class="skill-icon">
+                            <img src="img/css.png" alt="CSS icon">
+                        </div>
+                        <h3>CSS</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card js-card">
+                        <div class="skill-icon">
+                            <img src="img/javascript.png" alt="javascript icon">
+                        </div>
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="img/React.svg.png" alt="react icon">
+                        </div>
+                        <h3>React</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card node-card">
+                       <div class="skill-icon">
+                            <img src="img/node.png" alt="node icon">
+                        </div>
+                        <h3>Node.js</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                       <div class="skill-icon">
+                            <img src="img/Python.svg.png" alt="Python icon">
+                        </div>
+                        <h3>Python</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                       <div class="skill-icon">
+                            <img src="img/bootstrap.png" alt="bootstrap icon">
+                        </div>
+                        <h3>Bootstrap</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                       <div class="skill-icon">
+                            <img src="img/git.png" alt="git icon">
+                        </div>
+                        <h3>Git</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                       <div class="skill-icon">
+                            <img src="img/express.png" alt="express icon">
+                        </div>
+                        <h3>Express</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                       <div class="skill-icon">
+                            <img src="img/postgres.png" alt="postgres icon">
+                        </div>
+                        <h3>Postgres</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                       <div class="skill-icon">
+                            <img src="img/azure.png" alt="azure icon">
+                        </div>
+                        <h3>Azure</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="skill-card">
+                       <div class="skill-icon">
+                            <img src="img/tailwind.jpg" alt="tailwind icon">
+                        </div>
+                        <h3>Tailwind</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="frontend">
+                        <img src="./img/trabajo1.png" alt="Proyecto 1">
+                        <div class="project-info">
+                            <h3>E-commerce App</h3>
+                            <p>Aplicación de comercio electrónico con carrito de compras y pagos integrados.</p>
+                            <div class="tech">NextJs, Prisma, Postgres, Vercel</div>
+                            <div class="links">
+                                <a href="https://dvivas-next-shop.vercel.app/" target="_blank" class="demo-link">Demo</a>
+                                <a href="https://github.com/dnn-coder/dvivas-shop" target="_blank" class="github-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="backend">
+                        <img src="./img/ApiRest.jpg" alt="Proyecto 2">
+                        <div class="project-info">
+                            <h3>API RESTful</h3>
+                            <p>API para gestión de estudiantes con autenticación JWT y base de datos Postgres.</p>
+                            <div class="tech">Node.js, Express, Postgress, Sequelize</div>
+                            <div class="links">
+                                <a href="#" class="demo-link">Demo</a>
+                                <a href="#" class="github-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="fullstack">
+                        <img src="/img/pokeapp.png" alt="Proyecto 3">
+                        <div class="project-info">
+                            <h3>PokeApp</h3>
+                            <p>Aplicacion para mostrar pokemons, consume poke Api.</p>
+                            <div class="tech">React, Axios, TypeScript</div>
+                            <div class="links">
+                                <a href="https://poke-app-react-vite.netlify.app/" target="_blank" class="demo-link">Demo</a>
+                                <a href="https://github.com/dnn-coder/PokeAppReact" target="_blank" class="github-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="frontend">
+                        <img src="/img/portfolio.png" alt="Proyecto 4">
+                        <div class="project-info">
+                            <h3>Portafolio personal</h3>
+                            <p>Portafolio hecho con HTML, CSS, JavaScript.</p>
+                            <div class="tech">HTML, CSS, JavaScript, Netlify</div>
+                            <div class="links">
+                                <a href="#" class="demo-link">Demo</a>
+                                <a href="#" class="github-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="frontend">
+                        <img src="/img/watherApp.png" alt="Proyecto 4">
+                        <div class="project-info">
+                            <h3>Weather App</h3>
+                            <p>App de clima, consume api de tiempo y de geolocalizacion.</p>
+                            <div class="tech">React, Netlify, Api geolocalización</div>
+                            <div class="links">
+                                <a href="https://weatherapptwo.netlify.app/" target="_blank" class="demo-link">Demo</a>
+                                <a href="https://github.com/dnn-coder/WeaterApp" target="_blank" class="github-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="frontend">
+                        <img src="/img/Blackjack.png" alt="Proyecto 4">
+                        <div class="project-info">
+                            <h3>Black Jack</h3>
+                            <p>Juego de Black Jack hecho con javascript puro.</p>
+                            <div class="tech">JavaScript, Netlify</div>
+                            <div class="links">
+                                <a href="https://weatherapptwo.netlify.app/" target="_blank" class="demo-link">Demo</a>
+                                <a href="https://github.com/dnn-coder/WeaterApp" target="_blank" class="github-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="frontend">
+                        <img src="/img/firebase.png" alt="Proyecto 4">
+                        <div class="project-info">
+                            <h3>Task App</h3>
+                            <p>App para registrar tareas con firebase.</p>
+                            <div class="tech">JavaScript, Firebase, Netlify</div>
+                            <div class="links">
+                                <a href="https://crud-javascript-firebase-tasks.netlify.app/" target="_blank" class="demo-link">Demo</a>
+                                <a href="https://github.com/dnn-coder/CrudJavascriptTaskFirebase" target="_blank" class="github-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contacto</h3>
+                    <p>Email: dvivasmera@gmail.com</p>
+                    <p>LinkedIn: linkedin.com/in/tuusuario</p>
+                    <p>GitHub: github.com/tuusuario</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Danny Vivas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
