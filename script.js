@@ -114,15 +114,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Mouse parallax effect
-    hero.addEventListener('mousemove', (e) => {
-        const rect = hero.getBoundingClientRect();
-        const mouseX = e.clientX - rect.left;
-        const mouseY = e.clientY - rect.top;
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
+    document.addEventListener('mousemove', (e) => {
+        const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
 
-        const moveX = (mouseX - centerX) * 0.03;
-        const moveY = (mouseY - centerY) * 0.03;
+        const moveX = (e.clientX - centerX) * 0.03;
+        const moveY = (e.clientY - centerY) * 0.03;
 
         stars.forEach(star => {
             star.style.transform = `translate(${moveX}px, ${moveY}px)`;

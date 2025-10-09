@@ -170,12 +170,12 @@ body {
 }
 
 .stars {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: -1;
     animation: rotateStars 60s linear infinite;
 }
 
@@ -231,7 +231,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: -2;
 }
 
 .hero-bg::before {
@@ -350,7 +350,7 @@ body {
 /* Projects */
 .projects {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #0a0a1a 0%, #111122 100%);
+    background: none;
     box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
