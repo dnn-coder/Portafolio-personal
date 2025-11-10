@@ -187,15 +187,17 @@ body {
 
 .modal-content {
     background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 2rem;
     border: 1px solid rgba(0, 255, 136, 0.2);
     border-radius: 15px;
-    width: 80%;
+    width: 90%;
     max-width: 600px;
+    max-height: 80vh;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     color: #ffffff;
     position: relative;
+    overflow-y: auto;
 }
 
 .modal-content h2 {
