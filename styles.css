@@ -151,13 +151,8 @@ body {
     box-shadow: 0 10px 20px rgba(0, 255, 136, 0.3);
 }
 
-.hero-buttons {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.description-btn {
     margin-top: 2rem;
-    width: 100%;
-    max-width: 400px;
 }
 
 .description-btn {
