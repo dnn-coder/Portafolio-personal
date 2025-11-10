@@ -141,12 +141,94 @@ body {
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-button:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 255, 136, 0.3);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.description-btn {
+    background: linear-gradient(45deg, #00ff88, #00aaff);
+    color: #0a0a0a;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: none;
+    padding: 1rem 2rem;
+}
+
+.description-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.3);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
+    margin: 10% auto;
+    padding: 2rem;
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    position: relative;
+}
+
+.modal-content h2 {
+    color: #00ff88;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.modal-content p {
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #00ff88;
+    text-decoration: none;
 }
 
 .hero-image {
@@ -256,8 +338,21 @@ body {
 /* Skills */
 .skills {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #111122 0%, #1a1a2a 100%);
+    background: transparent;
     box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.skills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #0a0a2a, #1a1a3a, #2a0a4a, #3a1a3a, #1a1a3a, #0a0a2a);
+    z-index: -2;
 }
 
 .skills h2 {
@@ -350,7 +445,7 @@ body {
 /* Projects */
 .projects {
     padding: 6rem 0;
-    background: none;
+    background: #0a0a2a;
     box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
 }
 

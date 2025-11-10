@@ -127,4 +127,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Modal functionality
+const modal = document.getElementById('description-modal');
+const descriptionBtn = document.querySelector('.description-btn');
+const closeBtn = document.querySelector('.close');
+
+descriptionBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
 // Footer remains static at bottom
